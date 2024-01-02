@@ -1,0 +1,77 @@
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+.container{
+    width: 23%;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 20px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 7px 5px 0px 4px;
+    border: 1px solid black;
+}
+.container img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.container button{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    border: none;
+}
+.container h2{
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.1s;
+}
+.container h2:hover{
+    color: hsl(47, 88%, 63%);  
+}
+.container .profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.container .profile img{
+  width: 40px;
+  height: 40px;
+}
+.container p{
+    margin: 15px 0px;
+    font-size: 15px;
+}
+.container .profile p{
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* For the mobile version of this app */
+
+@media only screen  and (max-width: 480px){
+    
+    .container{
+        width: 87%;
+        position: relative;
+        margin-top: 87%;
+        margin-right: 10%;
+    }
+    .container p{
+        font-size: 14px;
+    }
+} 
